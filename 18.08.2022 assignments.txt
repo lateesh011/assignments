@@ -1,0 +1,205 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace _456
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Enter the First number");
+            int m = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Second number");
+            int j = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Third number");
+            int k = Convert.ToInt32(Console.ReadLine());
+            int w = m * j * k;
+            Console.WriteLine(w);
+            Console.ReadLine();
+            Console.WriteLine("----------------------------------2-----------------------------");
+            int a = 25;
+            int b = 4;
+            int c = a + b;
+            int d = a - b;
+            int e = a * b;
+            Console.WriteLine(c);
+            Console.WriteLine(d);
+            Console.WriteLine(e);
+
+
+
+            Console.WriteLine("next one ----------3------------");
+
+            int firstone;
+            Console.WriteLine("enter the value for first number");
+            firstone = Convert.ToInt32(Console.ReadLine());
+            int second;
+            Console.WriteLine("enter the value for second number");
+            second = Convert.ToInt32(Console.ReadLine());
+            int third;
+            Console.WriteLine("enter the value for third number");
+            third = Convert.ToInt32(Console.ReadLine());
+            int result = (firstone + second + third) / 3;
+            Console.WriteLine(result);
+            Console.ReadLine();
+
+
+
+
+
+            Console.WriteLine("--------------------------------4----------------------");
+            int num;
+            Console.WriteLine("Enter a digit: ");
+            num = Convert.ToInt32(Console.ReadLine());
+            Console.Write(num);
+            Console.Write(" ");
+            Console.Write(num);
+            Console.Write(" ");
+            Console.Write(num);
+            Console.Write(" ");
+            Console.Write(num);
+            Console.WriteLine();
+
+            Console.Write(num);
+            Console.Write(num);
+            Console.Write(num);
+            Console.WriteLine(num);
+            Console.WriteLine();
+            Console.WriteLine("{0} {0} {0} {0}", num);
+            Console.WriteLine("{0}{0}{0}{0}", num);
+            Console.ReadLine();
+
+            Console.WriteLine("---------------------5th------------------------------");
+            int number1, number2, number3;
+
+            Console.Write("Enter first number - ");
+            number1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter second number - ");
+            number2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter third number - ");
+            number3 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Result of specified numbers {0}, {1} and {2}, (x+y)·z is {3} and x·y + y·z is {4} \n\n",
+                number1, number2, number3, ((number1 + number2) * number3), (number1 * number2 + number2 * number3));
+            Console.ReadLine();
+
+
+            Console.WriteLine("--------------------------6------------------------------------");
+            Console.WriteLine("Enter your age: ");
+            int x = int.Parse(Console.ReadLine());
+            Console.WriteLine($"You look older than {x}");
+            Console.ReadLine();
+
+
+
+            Console.WriteLine("--------------------------7-----------------------");
+            Console.WriteLine("enter the value");
+            int y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"{y}{y}{y}");
+            Console.WriteLine($"{y} {y}");
+            Console.WriteLine($"{y} {y}");
+            Console.WriteLine($"{y} {y}");
+            Console.WriteLine($"{y}{y}{y}");
+            Console.ReadLine();
+
+
+            Console.WriteLine("--------------------------8----------------------");
+            Console.Write("amount of celsius is ");
+            double celsius = Convert.ToDouble(Console.ReadLine());
+            double kelvin = celsius + 273.15;
+            double fahrenheit = (celsius * 9 + (32 * 5)) / 5;
+            Console.WriteLine($"Kelvin = {kelvin}");
+            Console.WriteLine($"Fahrenheit = {fahrenheit}");
+            Console.ReadLine();
+
+
+            Console.WriteLine("---------------------------------------10---------------------");
+            Console.WriteLine("enter the value");
+            double h = Convert.ToDouble(Console.ReadLine());
+            double p = Convert.ToDouble(Console.ReadLine());
+            bool res = (h > 0 && p < 0) || (h < 0 && p > 0);
+            Console.WriteLine(res);
+            Console.ReadLine();
+
+
+            Console.WriteLine("---------------------------------------11---------------------");
+            Console.WriteLine("enter the value");
+            double o = Convert.ToDouble(Console.ReadLine());
+            double l = Convert.ToDouble(Console.ReadLine());
+            bool resu = (o > 0 && l > 0);
+            Console.WriteLine(resu);
+            Console.ReadLine();
+
+            Console.WriteLine("---------------------------------------12---------------------");
+            Console.WriteLine("enter the string");
+            string pk = Convert.ToString(Console.ReadLine());
+            bool resul = string.IsNullOrEmpty(pk);
+            Console.WriteLine(resul);
+            Console.ReadLine();
+
+            Console.WriteLine("---------------------------------------13---------------------");
+            Console.WriteLine("enter the meter value");
+            double meter = Convert.ToDouble(Console.ReadLine());
+            double kilometer = meter / 1000;
+            Console.WriteLine(kilometer);
+            Console.ReadLine();
+
+
+            Console.WriteLine("---------------------------------------14---------------------");
+            Console.WriteLine("enter the kilometer value");
+            double kilometer_ = Convert.ToDouble(Console.ReadLine());
+            double meter_ = kilometer_ *1000;
+            Console.WriteLine(meter_);
+            Console.ReadLine();
+
+
+            Console.WriteLine("---------------------------------------15---------------------");
+            Console.WriteLine("enter the us dolar u have");
+            double dollar = Convert.ToDouble(Console.ReadLine());
+            double INR = dollar * 62;
+            Console.WriteLine(INR);
+            Console.ReadLine();
+        }
+    }
+}
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem_16
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string s1, s2;
+            Console.WriteLine("Enter the firstname");
+            s1=Console.ReadLine();
+            Console.WriteLine("Enter the Lastname");
+            s2 = Console.ReadLine();
+            if (!string.IsNullOrEmpty(s1) && !string.IsNullOrEmpty(s2))
+            {
+                Console.WriteLine("Welcome to my App");
+            }
+            else
+            {
+                Console.WriteLine("Please login");
+            }
+            Console.ReadLine(); 
+        }
+    }
+
