@@ -1,0 +1,302 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace practice1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a;
+            Console.WriteLine("enter the value for a");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the value for b");
+            int b = Convert.ToInt32(Console.ReadLine());
+            if (a > b)
+            {
+                Console.WriteLine($"maximum number is {a}");
+                Console.WriteLine($"minimum number is {b}");
+            }
+            else
+            {
+                Console.WriteLine($"maximum number is {b}");
+                Console.WriteLine($"minimum number is {a}");
+            }
+            Console.ReadLine();
+
+
+
+            Console.WriteLine("--------------------------------------2nd--------------------");
+            Console.WriteLine("enter the value for c");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the value for d");
+            int d = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the value for e");
+            int e = Convert.ToInt32(Console.ReadLine());
+            if (c > d && c > e)
+            {
+                Console.WriteLine($"greater is {c}");
+            }
+            else if (d > c && d > e)
+            {
+                Console.WriteLine($"greater is {d}");
+            }
+            else
+            {
+                Console.WriteLine($"greater is {e}");
+            }
+            Console.ReadLine();
+
+
+
+            Console.WriteLine("-------------------------------------3rd---------------");
+            Console.WriteLine("enter the c1");
+            char c1 = Convert.ToChar(Console.ReadLine());
+            Console.WriteLine("enter the c2");
+            char c2 = Convert.ToChar(Console.ReadLine());
+            if (c1 == c2)
+                Console.WriteLine("Both characters are equal");
+            else
+                Console.WriteLine("Characters are not equal");
+            Console.ReadLine();
+
+            Console.WriteLine("--------------------------------------4th--------------------");
+            Console.WriteLine("enter the string1");
+            string string1 = Console.ReadLine();
+            Console.WriteLine("enter the string2");
+            string string2 = Console.ReadLine();
+            if (string1 == string2)
+            {
+                Console.WriteLine("both the string are equal");
+            }
+            else
+            {
+                Console.WriteLine("both the string are not equal");
+            }
+            Console.ReadLine();
+			
+			Console.WriteLine("----------------------------5th------------------------");
+            int x;
+            Console.WriteLine("enter the value for x");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the value for y");
+            int y = Convert.ToInt32(Console.ReadLine());
+            if (x > y)
+            {
+                Console.WriteLine("greater is x");
+            }
+            else
+            {
+                Console.WriteLine("greater is y");
+            }
+            Console.ReadLine();
+			Console.WriteLine("----------------------------6th------------------------");
+            int year;
+            Console.WriteLine("enter the value for year");
+            year = Convert.ToInt32 (Console.ReadLine());
+            if ((year%4)==0)
+            {
+                Console.WriteLine("leap year");
+            }
+            else
+            {
+                Console.WriteLine("not a leap year");
+            }
+            Console.ReadLine();
+			Console.WriteLine("----------------------------7th------------------------");
+            Console.WriteLine("enter the math subject marks");
+            int math = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the english marks");
+            int english = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the science");
+            int science = Convert.ToInt32(Console.ReadLine());
+            int result = (math + english + science) / 3;
+            if (result < 35)
+            {
+                Console.WriteLine("fail");
+            }
+            else if (result > 35 && result <
+                45)
+            {
+                Console.WriteLine("third");
+            }
+            else if (result > 45 && result <
+                60)
+            {
+                Console.WriteLine("second");
+            }
+            else
+            {
+                Console.WriteLine("first");
+            }
+            Console.ReadLine();
+			
+			Console.WriteLine("---------------------------------------8th------------------------");
+            for (int row = 1; row <= 5; ++row)
+            {
+                for (int col = 5; col >= row; --col)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+			
+			Console.Write("-------------------------9th---------------------");
+            int i, n, sum = 0;
+            Console.Write("\n\n");
+            Console.Write("Display the sum of n odd natural number:\n");
+            Console.Write("\n\n");
+
+            Console.Write("Input number of terms : ");
+            n = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\nThe odd numbers are :");
+            for (i = 1; i <= n; i++)
+            {
+                Console.Write("{0} ", 2 * i - 1);
+                sum += 2 * i - 1;
+            }
+            Console.Write("\nThe Sum of odd Natural Number upto {0} terms : {1} \n", n, sum);
+            Console.ReadLine();
+			Console.Write("-------------------------10th---------------------\n ");
+            Console.Write("Input a number: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            for (int t = num; t != 0; t = t / 10)
+            {
+                int r = t % 10;
+                int s = 0;
+                s = s * 10 + r;
+                Console.Write("{0}", s);
+            }
+            Console.ReadLine();
+			Console.Write("-------------------------11th---------------------\n ");
+			int sum = 0;
+            for (int i = 100; i <= 200; i++)
+            {
+                sum += i;
+            }
+            Console.WriteLine("The sum of integers from 100 to 200: {0}", sum);
+            Console.ReadLine();
+        
+			Console.Write("-------------------------12th---------------------\n ");
+			int i, sum = 0;
+            Console.Write("\n\n");
+            Console.Write("Find the number and sum of all integer between 100 and 200, divisible by 9:\n");
+            Console.Write("Numbers between 100 and 200, divisible by 9 : \n");
+            for (i = 101; i < 200; i++)
+            {
+                if (i % 9 == 0)
+                {
+                    Console.Write("{0}  ", i);
+                    sum += i;
+                }
+            }
+            Console.Write("\n\nThe sum : {0} \n", sum);
+            Console.ReadLine();
+			Console.Write("-------------------------13th---------------------\n ");
+			
+			int num;
+            Console.WriteLine("Enter the number");
+            num = Convert.ToInt32(Console.ReadLine());
+            if (num == 0)
+            {
+                Console.WriteLine("Entered Number is" + " " + num);
+
+            }
+            else if (num % 2 == 0 && num <= 100)
+            {
+                Console.WriteLine("Entered Number is Even ");
+            }
+            else if (num % 2 != 0 && num <= 100)
+            {
+                Console.WriteLine("Entered Number is Odd ");
+            }
+            else
+            {
+                Console.WriteLine("Entered Number is too large ");
+            }
+
+            if (num % 10 == 0)
+            {
+                Console.WriteLine("Entered number is multiple of 10");
+            }
+            Console.ReadLine();
+			
+			Console.Write("-------------------------14th---------------------\n ");
+			int num, userchoice;
+            Console.WriteLine("Enter the number");
+            num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the userchoice");
+            userchoice = Convert.ToInt32(Console.ReadLine());
+            switch (userchoice)
+            {
+                case 1:
+                    if (num == 0)
+                        Console.WriteLine("Entered number is" + num);
+                    break;
+                case 2:
+                    if (num % 2 == 0 && num <= 100)
+                        Console.WriteLine("Entered number is Even");
+                    if (num % 10 == 0)
+                        Console.WriteLine("Entered number is Multiples of 10");
+                    break;
+                case 3:
+                    if (num % 2 != 0 && num <= 100)
+                        Console.WriteLine("Entered number is Odd");
+                    break;
+                case 4:
+                    if (num > 100)
+                        Console.WriteLine("Entered number is Large");
+                    break;
+                default:
+                    break;
+
+
+            }
+            Console.ReadLine();
+			Console.Write("-------------------------15th---------------------\n ");
+        }	 int j = 25;
+            for ( int i = 0; i <25; i++)
+            {
+                
+                Console.WriteLine("{0} {1}", i, j);
+                j--;
+                if (i > j)
+                {
+                    Console.WriteLine("Crossed Over");
+                    break;
+                }
+               
+            }
+            
+            Console.ReadLine();
+			Console.Write("-------------------------16th---------------------\n ");
+			int points = 100, count = 0;
+            while (count<4)
+            {
+                string s = Console.ReadLine();
+                if (s=="HIT")
+                {
+                    points += 10;
+                }
+                else if (s=="MISS")
+                {
+                    points -= 20;
+                }
+                else
+                {
+                    Console.WriteLine("enter valid input");
+                    break;
+                }
+                count++;    
+            }
+            Console.WriteLine(points);
+            Console.ReadLine();
+    }
+    
+}
