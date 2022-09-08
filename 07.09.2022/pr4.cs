@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using 5library;
+using _4library;
 
 namespace _7sep_Problem_4
 {
@@ -37,7 +37,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace 5library
+namespace _4library
 {
     public class Products
     {
